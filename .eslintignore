@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+__tests__/fixtures
+node_modules
+flow-typed
+coverage
+dist
