@@ -8,3 +8,4 @@ node_modules
 .idea_modules/
 .npm
 .node_repl_history
+playground

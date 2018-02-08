@@ -11,7 +11,6 @@ const {
 	DB_NAME,
 } = process.env;
 
-
 module.exports = {
 	development: {
 		client: 'pg',
@@ -23,10 +22,11 @@ module.exports = {
 			password: DB_PASSWORD,
 			charset: 'utf8',
 		},
-		debug: true,
+		debug: false,
 		migrations: {
 			tableName: 'migrations',
 		},
+		seeds: { directory: './seeds' },
 	},
 
 	staging: {
@@ -45,6 +45,7 @@ module.exports = {
 		migrations: {
 			tableName: 'migrations',
 		},
+		seeds: { directory: './seeds' },
 	},
 
 	production: {
@@ -60,6 +61,7 @@ module.exports = {
 		migrations: {
 			tableName: 'migrations',
 		},
+		seeds: { directory: './seeds' },
 	},
 
 	testing: {
@@ -75,5 +77,6 @@ module.exports = {
 		migrations: {
 			tableName: 'migrations',
 		},
+		seeds: { directory: './seeds' },
 	},
 };
